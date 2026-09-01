@@ -20,6 +20,8 @@ endif ()
 #sources files
 set( SOURCES
     main.cpp
+        include/DomainTypes.h
+        src/Resource.cpp
 )
 #define executable target
 add_executable(cpp-oop-review ${SOURCES})
