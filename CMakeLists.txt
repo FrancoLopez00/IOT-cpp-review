@@ -1,3 +1,14 @@
+#[[
+
+    @file CMakeLists.txt
+    @brief CMake build configuration for cpp-oop-review project
+    @author IoT Solution Development Team
+    @date 2024-06-10
+    @version 1.0.0
+    @License MIT License
+
+]]
+
 #minimum required version of cmake
 cmake_minimum_required(VERSION 4.3.1)
 
@@ -20,6 +31,8 @@ endif ()
 #sources files
 set( SOURCES
     main.cpp
+        include/DomainTypes.h
+        src/Resource.cpp
 )
 #define executable target
 add_executable(cpp-oop-review ${SOURCES})
